@@ -68,4 +68,5 @@ ChineseOpera_BigData/
         ├── main.js              # 全局调度引擎
         ├── ui.js                # 弹窗交互与 DOM 控制
         ├── echarts.min.js       # ECharts 核心库 (离线本地化)
+        ├── echarts.min_1.js       # ECharts 核心库 (优化后，去除了多余库)
         └── echarts-wordcloud.min.js # 词云插件 (离线本地化)
