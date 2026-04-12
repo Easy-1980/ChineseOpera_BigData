@@ -191,3 +191,17 @@ myChartMap.getZr().on('click', function(event) {
         }
     }
 });
+
+// 加载动画关闭逻辑
+// 等待页面所有资源（包括图片、大体积 JS）加载完毕后执行
+window.addEventListener('load', function() {
+    const loader = document.querySelector('.initial-loader-container');
+    if (loader) {
+        // 先让它变透明（配合 CSS 里的 transition 实现淡出效果）
+        loader.style.opacity = '0';
+        // 0.5秒淡出动画结束后，把这个节点从 HTML 里彻底删掉
+        setTimeout(function() {
+            loader.remove();
+        }, 500);
+    }
+});

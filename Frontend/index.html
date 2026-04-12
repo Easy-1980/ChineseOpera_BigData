@@ -4,10 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>中国地方戏剧文化大数据分析平台</title>
-    
-    <!-- ECharts 核心库与词云插件 -->
-    <script src="js/echarts.min.js"></script>
-    <script src="js/echarts-wordcloud.min.js"></script>
 
     <!-- 页面全局样式 -->
     <link rel="stylesheet" href="css/style.css">
@@ -177,11 +173,21 @@
         </div>
     </div>
     
+    <!-- 加载动画 -->
+    <div class="initial-loader-container">
+        <div class="tech-spinner"></div>
+        <div class="loading-text">DATA LOADING...</div>
+    </div>
+
+    <!-- ECharts 核心库与词云插件 -->
+    <script src="js/echarts.min_1.js" defer></script>
+    <script src="js/echarts-wordcloud.min.js" defer></script>
+
     <!-- 页面脚本：数据 -> UI 交互 -> 图表渲染 -> 主流程 -->
-    <script src="js/data.js"></script>
-    <script src="js/ui.js"></script>
-    <script src="js/charts.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/data.js" defer></script>
+    <script src="js/ui.js" defer></script>
+    <script src="js/charts.js" defer></script>
+    <script src="js/main.js" defer></script>
     
 </body>
 </html>
