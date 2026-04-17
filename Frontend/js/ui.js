@@ -79,12 +79,6 @@ document.getElementById('tgi-modal').addEventListener('click', function(e) {
     if (e.target === this) closeTgiModal(); 
 });
 
-window.closeTgiModal = function() {
-    document.getElementById('tgi-modal').style.display = 'none';
-};
-document.getElementById('tgi-modal').addEventListener('click', function(e) {
-    if (e.target === this) closeTgiModal(); 
-});
 
 // 左上角剧种名录弹窗
 window.closeOperaListModal = function() {
